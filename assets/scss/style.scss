@@ -10,6 +10,11 @@ header {
     a {
         text-decoration: none;
         margin: 0 1rem;
+        color: black;
+
+        &:hover {
+            color: rgb(71, 109, 224);
+        }
     }
 }
 
@@ -24,12 +29,12 @@ main {
     border-radius: 1rem;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0px 10px 11px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.57);
 
-    .content{
+    .content {
         padding: .2rem;
 
-        h2{
+        h2 {
             margin: .3rem;
         }
 

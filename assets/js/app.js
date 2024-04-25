@@ -63,9 +63,6 @@ function getPrivateRecipes(recipeTimeId) {
 function clearResults(){
     sectionEl.innerHTML = "";
 }
- 
- 
-clearResults();
 
 
 function renderRecipe(recipe) {
