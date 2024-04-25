@@ -60,8 +60,8 @@ function getPrivateRecipes(recipeTimeId) {
     .catch(err => console.log('get recipes error occured: ', err))
 };
 
-function clearResults(){
-    sectionEl.innerHTML = "";
+function clearResults() {
+  sectionEl.innerHTML = "";
 }
 
 
