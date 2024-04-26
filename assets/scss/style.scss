@@ -64,3 +64,56 @@ section {
     gap: .8rem .5rem;
     flex-wrap: wrap;
 }
+// recipe styles
+.flex{
+    display: flex;
+    
+}
+
+
+.align{
+    align-items: baseline;
+}
+.time{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.diettype{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.mealtype{
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+.difficulty{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+// .filterContainer{
+//     display: none;
+
+// }
+
+.recipeFilters{
+    gap: 1rem;
+    h2{
+        margin: unset ;
+    }
+}
+
+.open{
+ 
+    
+.toggle{
+    display: block;
+}
+}
+
+.open .material-symbols-outlined{
+    transform: rotate(180deg);
+}
+
