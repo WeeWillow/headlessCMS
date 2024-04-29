@@ -1,13 +1,6 @@
 // Single Recipe styling start
 
 #singleRecipe {
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
   // body section
   background: var(--background-color);
 
@@ -31,6 +24,10 @@
   // breadcrumb section
   .breadcrumbs {
     margin: 2rem 0;
+
+    #currentPage {
+      font-weight: bold;
+    }
 
     ol {
       padding: 0;
