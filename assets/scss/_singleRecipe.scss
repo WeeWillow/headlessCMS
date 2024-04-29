@@ -68,7 +68,7 @@
   }
 
   // recipe overview section
-  .recipeOverview {
+  section.recipeOverview {
     margin: 0;
     color: var(--text-color);
     display: flex;
@@ -136,7 +136,7 @@
   }
 
   // ingredient list section
-  .ingredients {
+  section.ingredients {
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
@@ -163,6 +163,7 @@
     }
 
     h2 {
+      margin: 1rem 0;
       color: var(--text-color);
       font-family: 'Playfair Display';
       font-size: 40px;
@@ -197,21 +198,51 @@
   }
 
   // method list section
-  .method{
+  section.method {
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
 
-    .methodList {
-      margin: 0;
-      padding: 0;
-    }
-
     h2 {
+      margin: 1rem 0;
       color: var(--text-color);
       font-family: 'Playfair Display';
       font-size: 40px;
     }
+
+    .methodList {
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+      list-style: none;
+
+      li {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        font-size: 20px;
+        margin: 2rem 0;
+
+        .methodStep {
+          grid-column: 1;
+          background: var(--interactive-elements-color);
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          border: 2px solid var(--text-color);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .instruction {
+          grid-column: 2;
+          max-width: 80ch;
+          word-wrap: break-word;
+        }
+      }
+    }
+
   }
 }
 
