@@ -23,7 +23,7 @@
   <body id="singleRecipe">
     <header>
       <a href="./index.html"><h1>Kitchen Haven</h1></a>
-      <nav>
+      <nav aria-label="navigation">
         <a href="./recipes.html">Recipes</a>
         <a href="./articles.html">Articles</a>
         <a href="#">Meal Plan</a>
@@ -34,7 +34,21 @@
       </nav>
     </header>
     <main>
-
+      <nav aria-label="Breadcrumbs" class="breadcrumbs">
+        <ol>
+          <li>
+            <a href="./index.html">Home</a>
+            <p aria-hidden="true">&gt;</p>
+          </li>
+          <li>
+            <a href="./recipes.html">Recipes</a>
+            <p aria-hidden="true">&gt;</p>
+          </li>
+          <li>
+            <a href="#" aria-current="page">Current Recipe</a>
+          </li>
+        </ol>
+      </nav>
     </main>
   </body>
 </html>

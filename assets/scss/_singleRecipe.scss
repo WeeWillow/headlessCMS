@@ -1,14 +1,51 @@
 // Single Recipe styling start
 
 #singleRecipe {
+  // body section
+  background: var(--background-color);
 
-    // header section
+  // header section
+  header {
+    background-color: var(--nav-color);
 
-    header {
-        background-color: var(--nav-color);
-
+    a,
+    span {
+      color: var(--text-color);
     }
+  }
 
+
+  // main section
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .breadcrumbs {
+
+    ol {
+      display: flex;
+      list-style: none;
+      color: var(--text-color);
+      gap: .5rem;
+
+      li {
+        display: flex;
+        gap: .5rem;
+      }
+
+      a {
+        margin: 0;
+        text-decoration: none;
+        color: var(--text-color);
+      }
+
+      p {
+        margin: 0;
+        display: inline;
+      }
+    }
+  }
 
 
 
