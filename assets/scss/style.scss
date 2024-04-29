@@ -1,5 +1,12 @@
+
+// general styling
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 // typography (playfair dispay og merriweather fonte)
@@ -145,7 +152,13 @@ section {
 // Homepage styling start
 
 #homepage {
-background-color: red;
+
+    // header section
+
+    header{
+        background-color: var(--nav-color);
+
+    }
 
 
 
