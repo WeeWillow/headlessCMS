@@ -240,8 +240,9 @@ position: relative;
 .category-cards button {
     text-align: center;
     position: fixed;
-    transform: translateX(-60%);
-    transform: translateY(-60%);
+    // transform: translateX(-90px);
+    // transform: translateY(-60px);
+    top: 0px;
     font-family: "Playfair Display", serif;
     border: 1px solid --interactive-elements-color;
     border-color: var(--interactive-elements-color);
