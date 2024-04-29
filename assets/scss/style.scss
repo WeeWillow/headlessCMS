@@ -1,6 +1,3 @@
-// import
-@import "singleRecipe";
-
 // general styling
 
 * {
@@ -36,8 +33,10 @@ p {
   --nav-color: #C27838;
   --text-color: #FBF9F9;
   --interactive-elements-color: #233822;
-
 }
+
+// import
+@import "singleRecipe";
 
 
 header {
