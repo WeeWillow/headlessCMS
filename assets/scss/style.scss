@@ -246,7 +246,6 @@ position: relative;
     bottom: -10px;
     font-family: "Playfair Display", serif;
     border: none;
-    border-color: var(--interactive-elements-color);
     color: var(--interactive-elements-color);
     background-color: var(--text-color);
     border-radius: 10px;
@@ -274,12 +273,117 @@ position: relative;
     font-size: .8rem;
     margin-top: 0.3rem;
 }
+
 .circular-category-cards img{
     border-radius: 50%;
     height: 120px;
     width: 120px;
+}
+.all-recipes-btn{
+    font-family: "Playfair Display", serif;
+    border: none;
+    color: var(--text-color);
+    background-color:var(--interactive-elements-color);
+    border-radius: 10px;
+    height: 2rem;
+    padding-inline: 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
 
+    &:hover {
+        color: var(--interactive-elements-color);
+    background-color: var(--text-color);
+   border: 1px solid var(--interactive-elements-color);
+    }
     
 }
+.center-div{
+    
+    text-align: center;
+}
 
+
+.recipe-cards img {
+width: 200px;
+height: 200px;
+border-radius: 10px;
+}
+.recipe-cards div {
+position: relative;
+}
+.recipe-cards svg {
+position: absolute;
+bottom: -5px;
+transform: translateX(-55%);
+}
+.recipe-cards h3 {
+font-weight: 400;
+margin-top: .1rem;
+margin-bottom: 0;
+font-size: 1rem;
+}
+.recipe-cards article {
+max-width: 200px;
+}
+.recipe-cards {
+    margin-top: 2rem;
+    // text-align: center;
+    display: flex;
+    gap: 2.3rem;
+    justify-content: center;
+}
+
+.popular-recipes{
+    width: 910px;
+   margin: 0 auto;
+}
+
+.recent-food-stories svg{
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(-120%);
+}
+
+footer{
+    background-color: var(--nav-color);
+    height: 350px;
+    margin-top: 3rem;
+}
+
+.footer-content{
+    padding-top: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 6rem
+    ;
+    justify-content: center;
+    align-items: flex-start;
+    padding-inline: 4rem;
+}
+.footer-content h2, h3, p{
+    padding: 0;
+    margin: 0;
+}
+.footer-content i{
+   color: var(--text-color);
+   font-size: 2rem;
+   margin: 1rem;
+}
+.footer-content p{
+   width: 240px;
+}
+ul {
+
+    list-style-type: none;
+    padding: 0;
+    
+
+    li{
+        margin-top: 1rem;
+    }
+}
+
+
+}
 // Homepage styling slut
