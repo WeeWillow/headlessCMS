@@ -1,6 +1,13 @@
 // Single Recipe styling start
 
 #singleRecipe {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
   // body section
   background: var(--background-color);
 
@@ -17,13 +24,16 @@
 
   // main section
   main {
-    max-width: 1200px;
+    max-width: 1110px;
     margin: auto;
   }
 
+  // breadcrumb section
   .breadcrumbs {
+    margin: 2rem 0;
 
     ol {
+      padding: 0;
       display: flex;
       list-style: none;
       color: var(--text-color);
@@ -47,6 +57,71 @@
     }
   }
 
+  .recipeOverview {
+    margin: 0;
+    color: var(--text-color);
+    display: flex;
+
+    #recipeImg {
+      margin: 0 auto;
+      height: 50vh;
+      width: 37vw;
+      border-radius: 10px;
+    }
+
+    .recipeInfo {
+      margin: 0;
+      width: 50%;
+
+      h2 {
+        font-family: 'Playfair Display';
+        font-size: 40px;
+        margin-bottom: 2rem;
+      }
+
+      .recipeAuthor {
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          border-radius: 50%;
+          height: 70px;
+          width: 70px;
+          object-fit: cover;
+        }
+      }
+
+      .recipeQuickStats {
+        display: flex;
+        gap: .5rem;
+        margin-right: 1rem;
+
+        .quickStats {
+          background: var(--nav-color);
+          padding: .5rem;
+          height: 150px;
+          width: 200px;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            font-size: 20px;
+          }
+
+          span {
+            font-family: 'Playfair Display';
+            font-size: 40px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
 
 
 
