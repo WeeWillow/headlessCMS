@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+// variables
+
+:root {  
+    --background-color: #CF8B55;
+    --nav-color: #C27838;
+    --text-color: #FBF9F9;
+    --interactive-elements-color: #233822;
+  }
+
+
 header {
     display: flex;
     justify-content: space-around;
@@ -117,3 +127,11 @@ section {
     transform: rotate(180deg);
 }
 
+
+// Homepage styling start
+
+#homepage {
+background-color: red;
+}
+
+// Homepage styling slut
