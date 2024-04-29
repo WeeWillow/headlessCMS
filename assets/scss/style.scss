@@ -1,12 +1,14 @@
+// import
+@import "singleRecipe";
 
 // general styling
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 // typography (playfair dispay og merriweather fonte)
@@ -14,114 +16,121 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display", "Merriweather", serif;
 }
 
 p {
-font-family: "Merriweather", serif;
+  font-family: "Merriweather", serif;
 }
 
 // variables
 
-:root {  
-    --background-color: #CF8B55;
-    --nav-color: #C27838;
-    --text-color: #FBF9F9;
-    --interactive-elements-color: #233822;
+:root {
+  --background-color: #CF8B55;
+  --nav-color: #C27838;
+  --text-color: #FBF9F9;
+  --interactive-elements-color: #233822;
 
-  }
+}
 
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    a {
-        text-decoration: none;
-        margin: 0 1rem;
-        color: black;
+  a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: black;
 
-        &:hover {
-            color: rgb(71, 109, 224);
-        }
+    &:hover {
+      color: rgb(71, 109, 224);
     }
+  }
 }
 
 main {
-    margin: auto 1rem;
+  margin: auto 1rem;
 }
 
 .container {
-    width: 300px;
-    height: 400px;
-    background: #e6e6e6a3;
-    border-radius: 1rem;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.57);
+  width: 300px;
+  height: 400px;
+  background: #e6e6e6a3;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.57);
 
-    .content {
-        padding: .2rem;
+  .content {
+    padding: .2rem;
 
-        h2 {
-            margin: .3rem;
-        }
-
-        p {
-            padding: 1rem;
-            height: 70px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
-        }
+    h2 {
+      margin: .3rem;
     }
+
+    p {
+      padding: 1rem;
+      height: 70px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+  }
 
 }
 
 img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    justify-content: center;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  justify-content: center;
 }
 
 section {
-    margin: 1rem 0;
-    display: flex;
-    gap: .8rem .5rem;
-    flex-wrap: wrap;
+  margin: 1rem 0;
+  display: flex;
+  gap: .8rem .5rem;
+  flex-wrap: wrap;
 }
+
 // recipe styles
-.flex{
-    display: flex;
-    
+.flex {
+  display: flex;
 }
 
-
-.align{
-    align-items: baseline;
-}
-.time{
-    border: 1px solid black;
-    border-radius: 10px;
-}
-.diettype{
-    border: 1px solid black;
-    border-radius: 10px;
+.align {
+  align-items: baseline;
 }
 
-.mealtype{
-    border: 1px solid black;
-    border-radius: 10px;
+.time {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.diettype {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.mealtype {
+  border: 1px solid black;
+  border-radius: 10px;
 
 }
-.difficulty{
-    border: 1px solid black;
-    border-radius: 10px;
+
+.difficulty {
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 // .filterContainer{
@@ -129,23 +138,24 @@ section {
 
 // }
 
-.recipeFilters{
-    gap: 1rem;
-    h2{
-        margin: unset ;
-    }
+.recipeFilters {
+  gap: 1rem;
+
+  h2 {
+    margin: unset;
+  }
 }
 
-.open{
- 
-    
-.toggle{
+.open {
+
+
+  .toggle {
     display: block;
-}
+  }
 }
 
-.open .material-symbols-outlined{
-    transform: rotate(180deg);
+.open .material-symbols-outlined {
+  transform: rotate(180deg);
 }
 
 
@@ -153,12 +163,12 @@ section {
 
 #homepage {
 
-    // header section
+  // header section
 
-    header{
-        background-color: var(--nav-color);
+  header {
+    background-color: var(--nav-color);
 
-    }
+  }
 
 
 
