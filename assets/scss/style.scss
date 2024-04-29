@@ -237,22 +237,49 @@ position: relative;
     border-radius: 10px;
 }
 
-.category-cards button {
+
+
+.category-cards article button {
     text-align: center;
-    position: fixed;
-    // transform: translateX(-90px);
-    // transform: translateY(-60px);
-    top: 0px;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: -10px;
     font-family: "Playfair Display", serif;
-    border: 1px solid --interactive-elements-color;
+    border: none;
     border-color: var(--interactive-elements-color);
     color: var(--interactive-elements-color);
     background-color: var(--text-color);
     border-radius: 10px;
     height: 2rem;
     padding-inline: 1rem;
+   border: 1px solid var(--interactive-elements-color);
+    white-space: nowrap;
+
+    &:hover {
+        color: var(--text-color);
+        background-color: var(--interactive-elements-color);
+    }
 }
 
+
+.circular-category-cards {
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    gap: 2.3rem;
+    justify-content: center;
+}
+.circular-category-cards h3{
+    font-weight: 300;
+    font-size: .8rem;
+    margin-top: 0.3rem;
+}
+.circular-category-cards img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+
+    
 }
 
 // Homepage styling slut
