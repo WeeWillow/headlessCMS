@@ -1,36 +1,38 @@
-* {
+body#articles {
+
+  * {
     box-sizing: border-box;
   }
-  
+
   // variables
-  
+
   :root {
     --background-color: #cf8b55;
     --nav-color: #c27838;
     --text-color: #fbf9f9;
     --interactive-elements-color: #233822;
   }
-  
+
   header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+
     a {
       text-decoration: none;
       margin: 0 1rem;
       color: black;
-  
+
       &:hover {
         color: rgb(71, 109, 224);
       }
     }
   }
-  
+
   main {
     margin: auto 1rem;
   }
-  
+
   .container {
     width: 300px;
     height: 400px;
@@ -39,14 +41,14 @@
     overflow: hidden;
     text-align: center;
     box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.57);
-  
+
     .content {
       padding: 0.2rem;
-  
+
       h2 {
         margin: 0.3rem;
       }
-  
+
       p {
         padding: 1rem;
         height: 70px;
@@ -58,44 +60,51 @@
       }
     }
   }
-  
+
   img {
     width: 300px;
     height: 200px;
     object-fit: cover;
     justify-content: center;
   }
-  
+
   section {
     margin: 1rem 0;
     display: flex;
     gap: 0.8rem 0.5rem;
     flex-wrap: wrap;
   }
-.breadcrumb {
+
+  .breadcrumb {
     margin-bottom: 20px;
     color: var(--text-color);
   }
+
   body {
     background-color: var(--background-color);
     margin-left: 300px;
     margin-right: 300px;
-    img{
+
+    img {
       border-radius: 10px;
     }
   }
+
   //Øverste artikel
   a {
-      text-decoration: none;
+    text-decoration: none;
   }
+
   .mainImage {
     position: relative;
     margin-bottom: 100px;
+
     img {
       width: 100%;
       height: 600px;
     }
   }
+
   .overlayTopArticle {
     position: absolute;
     top: 50%;
@@ -107,33 +116,40 @@
     padding: 10px;
     border-radius: 10px;
   }
+
   //To features og en større artikel
   .boxLayout {
     display: flex;
     margin-bottom: 100px;
   }
+
   .leftArticleBoxes {
     display: flex;
     width: 40%;
     flex-direction: column;
     padding-right: 20px;
     height: 600px;
+
     h2 {
       color: var(--text-color);
     }
+
     p {
       color: var(--text-color);
     }
   }
+
   .rightArticleBox {
     display: flex;
     width: 60%;
     position: relative;
+
     img {
       width: 100%;
       height: 700px;
     }
   }
+
   .overlayRightBox {
     position: absolute;
     bottom: 0;
@@ -144,25 +160,30 @@
     padding: 10px;
     border-radius: 10px;
   }
+
   .box {
     margin-bottom: 75px;
     display: flex;
+
     img {
-      width: 250px;  
-      height: 250px; 
-      object-fit: cover; 
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
     }
   }
+
   .textContent {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
   }
-  
+
   //To store artikler
-  .containerMiddelArticle, .containerBottomArticle{
-      margin-bottom: 100px;
+  .containerMiddelArticle,
+  .containerBottomArticle {
+    margin-bottom: 100px;
   }
+
   .overlayMiddelArticle {
     position: absolute;
     bottom: 0;
@@ -174,6 +195,7 @@
     padding: 10px;
     border-radius: 10px;
   }
+
   .overlayBottomArticle {
     position: absolute;
     bottom: 0;
@@ -185,24 +207,30 @@
     padding: 10px;
     border-radius: 10px;
   }
+
   //Række af artikler i bunden
   .imageRow {
     display: flex;
     gap: 30px;
+
     img {
-      width: 100%; 
+      width: 100%;
     }
+
     h2 {
       color: var(--text-color);
       font-weight: lighter;
     }
   }
-  .containerSmallArticle{
-      display: flex;
-      height: 600px;
-      flex: 1;
-      flex-direction: column;
-      align-items: center;
+
+  .containerSmallArticle {
+    display: flex;
+    height: 600px;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
   }
+
   //Article oversigt slut
-  
+
+}
