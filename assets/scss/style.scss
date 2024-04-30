@@ -36,9 +36,7 @@ p {
 }
 
 // import
-@import "singleRecipe";
-
-@import "articleStyle";
+@import "singleRecipe", "articleStyle";
 
 header {
   display: flex;
@@ -112,10 +110,12 @@ section {
 .align {
   align-items: baseline;
 }
+
 .time {
   border: 1px solid black;
   border-radius: 10px;
 }
+
 .diettype {
   border: 1px solid black;
   border-radius: 10px;
@@ -125,6 +125,7 @@ section {
   border: 1px solid black;
   border-radius: 10px;
 }
+
 .difficulty {
   border: 1px solid black;
   border-radius: 10px;
