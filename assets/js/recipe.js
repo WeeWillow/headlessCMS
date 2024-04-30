@@ -1,0 +1,4 @@
+getToken()
+  .then(() => getSingleRecipe());
+
+renderSingleRecipe();

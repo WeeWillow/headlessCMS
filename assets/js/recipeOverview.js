@@ -1,0 +1,3 @@
+getToken()
+  .then(() => getPrivateRecipes());
+
