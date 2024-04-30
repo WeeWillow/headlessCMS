@@ -1,6 +1,3 @@
-#articles {
-  background: var(--background-color);
-
   header {
     display: flex;
     justify-content: space-around;
@@ -68,10 +65,10 @@
     color: var(--text-color);
   }
 
-  body {
+  #articles {
     background-color: var(--background-color);
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 20vw;
+    margin-right: 20vw;
 
     img {
       border-radius: 10px;
@@ -221,4 +218,3 @@
 
   //Article oversigt slut
 
-}
