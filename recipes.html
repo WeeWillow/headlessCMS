@@ -1,205 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
     <script src="./assets/js/app.js" defer></script>
     <script src="./assets/js/recipeOverview.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-<body id="recipes-page">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body id="recipes-page">
     <header>
-        <a href="./index.html"><h1>Kitchen Haven</h1></a>
-        <nav>
-            <div>
-                <a href="./recipes.html">Recipes</a>
-                <a href="./articles.html">Articles</a>
-                <a href="#">Meal Plan</a>
-                <a href="#">Food Coach</a>
-                <a href="#">Cookbooks</a>
-                <a href="#">Log In</a>
-            </div>
-            <div>
-                <span class="material-symbols-outlined"> search </span>
-            </div>
-        </nav>
+      <a href="./index.html"><h1>Kitchen Haven</h1></a>
+      <nav>
+        <div>
+          <a href="./recipes.html">Recipes</a>
+          <a href="./articles.html">Articles</a>
+          <a href="#">Meal Plan</a>
+          <a href="#">Food Coach</a>
+          <a href="#">Cookbooks</a>
+          <a href="#">Log In</a>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> search </span>
+        </div>
+      </nav>
     </header>
-    
+
     <main>
-    <section class="filters">
-    <div class="recipeFilters flex">
-        <div class="open time">
+      <section class="filters">
+        <div class="recipeFilters flex">
+          <div class="open time">
             <div class="align flex">
-            <h2>BY TIME</h2>
-            <span class="material-symbols-outlined">
-                expand_more
-            </span>
+              <h2>BY TIME</h2>
+              <span class="material-symbols-outlined"> expand_more </span>
             </div>
             <div class="filterContainer toggle">
-                <div>
-                    <input type="radio" name="time" id="quick" value="75">
-                    <label for="quick">Quick</label>
-                </div>
-                <div>
-                    <input type="radio" name="time" id="moderate" value="76">
-                    <label for="moderate">Moderate</label>
-                </div>
-                <div>
-                    <input type="radio" name="time" id="long" value="77">
-                    <label for="long">Long</label>
-                </div>
+              <div>
+                <input type="radio" name="time" id="quick" value="75" />
+                <label for="quick">Quick</label>
+              </div>
+              <div>
+                <input type="radio" name="time" id="moderate" value="76" />
+                <label for="moderate">Moderate</label>
+              </div>
+              <div>
+                <input type="radio" name="time" id="long" value="77" />
+                <label for="long">Long</label>
+              </div>
             </div>
-        </div>
-        <div class="open mealtype">
+          </div>
+          <div class="open mealtype">
             <div class="align flex">
-            <h2>BY MEAL TYPE</h2>
-            <span class="material-symbols-outlined">
-                expand_more
-            </span>
+              <h2>BY MEAL TYPE</h2>
+              <span class="material-symbols-outlined"> expand_more </span>
             </div>
             <div class="filterContainer toggle">
-                <div>
-                    <input type="radio" name="mealtype" id="appetizer" value="31">
-                    <label for="appetizer">Appetizer</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="breakfast" value="26">
-                    <label for="breakfast">Breakfast</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="brunch" value="120">
-                    <label for="brunch">Brunch</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="dessert" value="30">
-                    <label for="dessert">Dessert</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="dinner" value="28">
-                    <label for="dinner">Dinner</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="drink" value="117">
-                    <label for="drink">Drink</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="lunch" value="27">
-                    <label for="lunch">Lunch</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="sidedish" value="32">
-                    <label for="sidedish">Side dish</label>
-                </div>
-                <div>
-                    <input type="radio" name="mealtype" id="snack" value="29">
-                    <label for="snack">Snack</label>
-                </div>
+              <div>
+                <input type="radio" name="mealtype" id="appetizer" value="31" />
+                <label for="appetizer">Appetizer</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="breakfast" value="26" />
+                <label for="breakfast">Breakfast</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="brunch" value="120" />
+                <label for="brunch">Brunch</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="dessert" value="30" />
+                <label for="dessert">Dessert</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="dinner" value="28" />
+                <label for="dinner">Dinner</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="drink" value="117" />
+                <label for="drink">Drink</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="lunch" value="27" />
+                <label for="lunch">Lunch</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="sidedish" value="32" />
+                <label for="sidedish">Side dish</label>
+              </div>
+              <div>
+                <input type="radio" name="mealtype" id="snack" value="29" />
+                <label for="snack">Snack</label>
+              </div>
             </div>
-        </div>
-        <div class="open diettype">
+          </div>
+          <div class="open diettype">
             <div class="align flex">
-            <h2>BY DIETTYPE</h2>
-            <span class="material-symbols-outlined">
-                expand_more
-            </span>
+              <h2>BY DIETTYPE</h2>
+              <span class="material-symbols-outlined"> expand_more </span>
             </div>
             <div class="filterContainer toggle">
-                <div>
-                    <input type="radio" name="diettype" id="healthy" value="116">
-                    <label for="healthy">Healthy</label>
-                </div>
-                <div>
-                    <input type="radio" name="diettype" id="keto" value="66">
-                    <label for="keto">Keto</label>
-                </div>
-                <div>
-                    <input type="radio" name="diettype" id="paleo" value="67">
-                    <label for="paleo">Paleo</label>
-                </div>
-                <div>
-                    <input type="radio" name="diettype" id="pescetarian" value="68">
-                    <label for="pescetarian">Pescetarian</label>
-                </div>
-                <div>
-                    <input type="radio" name="diettype" id="vegan" value="64">
-                    <label for="vegan">Vegan</label>
-                </div>
-                <div>
-                    <input type="radio" name="diettype" id="vegetarian" value="63">
-                    <label for="vegetarian">Vegetarian</label>
-                </div>
+              <div>
+                <input type="radio" name="diettype" id="healthy" value="116" />
+                <label for="healthy">Healthy</label>
+              </div>
+              <div>
+                <input type="radio" name="diettype" id="keto" value="66" />
+                <label for="keto">Keto</label>
+              </div>
+              <div>
+                <input type="radio" name="diettype" id="paleo" value="67" />
+                <label for="paleo">Paleo</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="diettype"
+                  id="pescetarian"
+                  value="68"
+                />
+                <label for="pescetarian">Pescetarian</label>
+              </div>
+              <div>
+                <input type="radio" name="diettype" id="vegan" value="64" />
+                <label for="vegan">Vegan</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="diettype"
+                  id="vegetarian"
+                  value="63"
+                />
+                <label for="vegetarian">Vegetarian</label>
+              </div>
             </div>
-        </div>
-        <div class="open difficulty">
+          </div>
+          <div class="open difficulty">
             <div class="align flex">
-            <h2>BY DIFFICULTY</h2>
-            <span class="material-symbols-outlined">
-                expand_more
-            </span>
+              <h2>BY DIFFICULTY</h2>
+              <span class="material-symbols-outlined"> expand_more </span>
             </div>
             <div class="filterContainer toggle">
-                <div>
-                    <input type="radio" name="difficulty" id="easy" value="69">
-                    <label for="easy">Easy</label>
-                </div>
-                <div>
-                    <input type="radio" name="difficulty" id="medium" value="70">
-                    <label for="medium">Moderate</label>
-                </div>
-                <div>
-                    <input type="radio" name="difficulty" id="difficult" value="71">
-                    <label for="difficult">Difficult</label>
-                </div>
-                <div>
-                    <input type="radio" name="difficulty" id="x-treme" value="74">
-                    <label for="x-treme">X-treme</label>
-                </div>
+              <div>
+                <input type="radio" name="difficulty" id="easy" value="69" />
+                <label for="easy">Easy</label>
+              </div>
+              <div>
+                <input type="radio" name="difficulty" id="medium" value="70" />
+                <label for="medium">Moderate</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="difficulty"
+                  id="difficult"
+                  value="71"
+                />
+                <label for="difficult">Difficult</label>
+              </div>
+              <div>
+                <input type="radio" name="difficulty" id="x-treme" value="74" />
+                <label for="x-treme">X-treme</label>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    </section>
-    <section class="renderedRecipes"></section>
-    </section>
+      </section>
+      <section class="renderedRecipes"></section>
     </main>
     <footer>
-        <div class="footer-content">
+      <div class="footer-content">
+        <div>
+          <h2>Kitchen Haven</h2>
           <div>
-            <h2>Kitchen Haven</h2>
-            <div>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-x-twitter"></i>
-            </div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-x-twitter"></i>
           </div>
-          <div>
-            <h3>Check out our</h3>
-            <ul>
-              <li><a href="./recipes.html">Recipes</a></li>
-              <li><a href="./articles.html">Articles</a></li>
-              <li><a href="./#.html">Meal Plan</a></li>
-              <li><a href="./#.html">Food Coach</a></li>
-              <li><a href="./#.html">Cookbooks</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Recipes</h3>
-            <ul>
-              <li><a href="./recipes.html">Healthy recipes</a></li>
-              <li><a href="./recipes.html">Quick and easy recipes</a></li>
-              <li><a href="./recipes.html">Paleo Recipes</a></li>
-              <li><a href="./recipes.html">Meal Prep recipes</a></li>
-              <li><a href="./recipes.html">Dinner recipes</a></li>
-            </ul>
-          </div>
-          <div><p>Our food coach program helps you create and easy-to-use mealplan that is tailormade for your family.</p> <a href="#"
+        </div>
+        <div>
+          <h3>Check out our</h3>
+          <ul>
+            <li><a href="./recipes.html">Recipes</a></li>
+            <li><a href="./articles.html">Articles</a></li>
+            <li><a href="./#.html">Meal Plan</a></li>
+            <li><a href="./#.html">Food Coach</a></li>
+            <li><a href="./#.html">Cookbooks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Recipes</h3>
+          <ul>
+            <li><a href="./recipes.html">Healthy recipes</a></li>
+            <li><a href="./recipes.html">Quick and easy recipes</a></li>
+            <li><a href="./recipes.html">Paleo Recipes</a></li>
+            <li><a href="./recipes.html">Meal Prep recipes</a></li>
+            <li><a href="./recipes.html">Dinner recipes</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>
+            Our food coach program helps you create and easy-to-use mealplan
+            that is tailormade for your family.
+          </p>
+          <a href="#"
             ><button class="all-recipes-btn">TRY FOOD COACH</button></a
           >
-          </div>
-          
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

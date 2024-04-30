@@ -131,22 +131,47 @@ function clearResults() {
 function renderRecipeCard(recipe) {
   sectionEl.innerHTML +=
     `
-  <a href="./recipe.html?id=${recipe.id}">
-  <article class="container">
-  <img src="${recipe.acf.image.url}" alt="${recipe.acf.alt_title}">
-  <div class="content">
-  <h2>
-  ${recipe.acf.alt_title}
-  </h2>
-  <p class="description">
-  ${recipe.acf.description}
-  </p>
-  </div>
-  </article>
-  </a>
-  `
+    <div class="recipe-cards">
+    <a href="./recipe.html?id=${recipe.id}">
+    <article>
+    <div>
+    <img src="${recipe.acf.image.url}" alt="${recipe.acf.alt_title}">
+      <svg
+        id="Add_to_favorites"
+        data-name="Add to favorites"
+        xmlns="http://www.w3.org/2000/svg"
+        width="29"
+        height="29"
+        viewBox="0 0 29 29"
+      >
+        <circle
+          id="Ellipse_2"
+          data-name="Ellipse 2"
+          cx="14.5"
+          cy="14.5"
+          r="14.5"
+          fill="#233822"
+        />
+        <path
+          id="Icon_akar-heart"
+          data-name="Icon akar-heart"
+          d="M5.769,4.5A2.755,2.755,0,0,0,3,7.241c0,1.222.485,4.123,5.254,7.055a.545.545,0,0,0,.567,0c4.769-2.932,5.254-5.833,5.254-7.055A2.755,2.755,0,0,0,11.306,4.5,4.185,4.185,0,0,0,8.537,6.161,4.185,4.185,0,0,0,5.769,4.5Z"
+          transform="translate(5.963 6)"
+          fill="none"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+        />
+      </svg>
+    </div>
+    <h3> ${recipe.acf.alt_title}</h3>
+    </article>
+    </a>
+    </div>
+    `
 }
-
+   
 // catch url id
 // fetch
 // render
