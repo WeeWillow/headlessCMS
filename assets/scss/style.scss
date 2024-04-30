@@ -141,6 +141,9 @@ body {
   background-color: var(--background-color);
   margin-left: 300px;
   margin-right: 300px;
+  img{
+    border-radius: 10px;
+  }
 }
 //Øverste artikel
 a {
@@ -163,6 +166,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   color: var(--text-color);
   padding: 10px;
+  border-radius: 10px;
 }
 //To features og en større artikel
 .boxLayout {
@@ -199,6 +203,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   color: var(--text-color);
   padding: 10px;
+  border-radius: 10px;
 }
 .box {
   margin-bottom: 75px;
@@ -228,6 +233,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   color: var(--text-color);
   padding: 10px;
+  border-radius: 10px;
 }
 .overlayBottomArticle {
   position: absolute;
@@ -238,6 +244,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   color: var(--text-color);
   padding: 10px;
+  border-radius: 10px;
 }
 //Række af artikler i bunden
 .imageRow {
