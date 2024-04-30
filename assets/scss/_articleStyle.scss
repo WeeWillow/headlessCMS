@@ -1,17 +1,5 @@
-body#articles {
-
-  * {
-    box-sizing: border-box;
-  }
-
-  // variables
-
-  :root {
-    --background-color: #cf8b55;
-    --nav-color: #c27838;
-    --text-color: #fbf9f9;
-    --interactive-elements-color: #233822;
-  }
+#articles {
+  background: var(--background-color);
 
   header {
     display: flex;
