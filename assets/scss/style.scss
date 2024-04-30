@@ -29,15 +29,16 @@ p {
 // variables
 
 :root {
-  --background-color: #CF8B55;
-  --nav-color: #C27838;
-  --text-color: #FBF9F9;
+  --background-color: #cf8b55;
+  --nav-color: #c27838;
+  --text-color: #fbf9f9;
   --interactive-elements-color: #233822;
 }
 
 // import
 @import "singleRecipe";
 
+@import "articleStyle";
 
 header {
   display: flex;
@@ -89,6 +90,7 @@ main {
 }
 
 img {
+  justify-content: center;
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -110,12 +112,10 @@ section {
 .align {
   align-items: baseline;
 }
-
 .time {
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .diettype {
   border: 1px solid black;
   border-radius: 10px;
@@ -124,9 +124,7 @@ section {
 .mealtype {
   border: 1px solid black;
   border-radius: 10px;
-
 }
-
 .difficulty {
   border: 1px solid black;
   border-radius: 10px;
@@ -146,8 +144,6 @@ section {
 }
 
 .open {
-
-
   .toggle {
     display: block;
   }
@@ -156,7 +152,6 @@ section {
 .open .material-symbols-outlined {
   transform: rotate(180deg);
 }
-
 
 // Homepage styling start
 
@@ -168,11 +163,10 @@ section {
     background-color: var(--nav-color);
 
   }
-
-
-
-
-
 }
 
 // Homepage styling slut
+
+.overlay {
+  background-color: grey;
+}
