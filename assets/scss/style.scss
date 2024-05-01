@@ -33,7 +33,7 @@ a {
 body {
   background-color: #cf8b55;
   margin: 0;
-  
+
   h2 {
     font-family: 'Playfair Display';
     font-size: 40px;
@@ -44,10 +44,10 @@ body {
 
 // import
 // @import "singleRecipe", "articleOverview", "singleArticle", "recipeOverview", "homeIndex";
-@import "recipeOverview";
+@import "recipeOverview", "singleRecipe";
 
 main {
-  width: 70vw;
+  width: 75vw;
   margin: auto;
 }
 
@@ -68,7 +68,7 @@ header {
   background-color: var(--nav-color);
   color: var(--text-color);
   height: 7rem;
-  padding: 0 10vw;
+  padding: 0 auto;
 
   h1 {
     color: var(--text-color);
@@ -194,4 +194,3 @@ footer {
 .overlay {
   background-color: grey;
 }
-

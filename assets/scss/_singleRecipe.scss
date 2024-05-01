@@ -16,10 +16,10 @@
     color: var(--text-color);
     display: flex;
 
-    #recipeImg {
+    img#recipeImg {
       margin: 0 auto;
-      height: 50%;
-      width: 49%;
+      height: 450px;
+      width: 50%;
       border-radius: 10px;
     }
 
@@ -145,59 +145,6 @@
       }
     }
 
-  }
-
-  // others also read section
-  aside.suggestions {
-    display: flex;
-    flex-direction: column;
-    color: var(--text-color);
-    width: 360px;
-
-    h2 {
-      font-size: 35px;
-    }
-
-    .recipeContainer {
-      color: var(--text-color);
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .unitType {
-
-        span {
-          color: rgba(251, 249, 249, 0.7);
-          margin: 0 .5rem;
-        }
-      }
-
-      #selected {
-        color: var(--text-color);
-      }
-    }
-
-    article {
-      margin: 0;
-
-      h3 {
-        margin: 0 0 1rem 0;
-      }
-
-      img {
-        width: 350px;
-        height: 220px;
-        border-radius: 10px;
-        margin: 0;
-      }
-    }
-
-  }
-
-  footer {
-    margin: 3rem;
-    color: var(--background-color);
   }
 }
 
