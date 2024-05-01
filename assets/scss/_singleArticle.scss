@@ -1,6 +1,7 @@
 /*Overskrift med billede til artikel*/
 
 #singleArticle {
+
   /*Overskrift med billede til artikel*/
   .header {
     display: flex;
@@ -20,6 +21,15 @@
     margin-bottom: 150px;
   }
 
+  .authorName{
+    font-size: .7rem;
+  }
+
+  .introductionText{
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+
   /*Content til artiklen med billeder*/
   .mainContent {
     width: 70%;
@@ -37,11 +47,19 @@
 
     h3 {
       margin: 0.2rem;
-      
+
     }
   }
 
   /*Skip to section*/
+  .contentWrapper {
+    h3 {
+      font-size: 1.5rem;
+      margin: 0;
+      width: 90%;
+    }
+  }
+
   .navigationContent {
     display: flex;
     justify-content: space-between;
@@ -54,6 +72,11 @@
     a {
       text-decoration: none;
       color: var(--text-color);
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--interactive-elements-color)
+      }
     }
 
     ul {
@@ -80,13 +103,14 @@
       width: 90%;
       height: 250px;
       object-fit: cover;
+      border-radius: 10px;
     }
 
     svg {
       position: absolute;
-      bottom: 45px;
-      right: 30px;
-      z-index: 10;
+      bottom: 55px;
+      right: 25px;
+      z-index: 100;
     }
   }
 

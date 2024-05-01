@@ -11,17 +11,20 @@
     margin-bottom: 1rem;
   }
 
-  .center p {
-    font-size: 1rem;
-    margin-bottom: 3rem;
+  .center {
+    text-align: center;
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
   }
 
   .category-cards {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     text-align: center;
     justify-content: center;
-
   }
 
   .category-cards article {
@@ -35,8 +38,6 @@
     width: 200px;
     border-radius: 10px;
   }
-
-
 
   .category-cards {
 
@@ -69,7 +70,7 @@
     margin-top: 4rem;
     text-align: center;
     display: flex;
-    gap: 2.3rem;
+    gap: 4rem;
     justify-content: center;
   }
 
@@ -96,7 +97,7 @@
   .recipe-cards {
     margin-top: 2rem;
     display: flex;
-    gap: 2.3rem;
+    gap: 5rem;
     justify-content: center;
 
     img {
@@ -130,12 +131,13 @@
   }
 
   .popular-recipes {
-    width: 910px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    text-align: center;
   }
 
   .recent-food-stories {
     position: relative;
+
     svg {
       position: absolute;
       bottom: 30px;
@@ -143,7 +145,7 @@
     }
   }
 
-  .Add_to_favorites{
+  .Add_to_favorites {
     cursor: pointer;
   }
 }

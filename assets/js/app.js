@@ -212,7 +212,7 @@ function renderSingleRecipe(recipe) {
         <p aria-hidden="true">&gt;</p>
       </li>
       <li>
-        <a href="#" aria-current="page" id="currentPage">Red-Braised Pork Belly</a>
+        <a href="#" aria-current="page" id="currentPage">${recipe.acf.alt_title}</a>
       </li>
     </ol>
   </nav>
@@ -287,7 +287,7 @@ function renderIngredientList(ingredients) {
   for (let i = 1; i <= 10; i++) {
     // get name from i
     const ingredientName = ingredients[`ingredient_${i}`];
-// remove empty space, if not empty then continue
+    // remove empty space, if not empty then continue
     if (ingredientName.trim() !== '') {
       // save amount of ingredient in variable
       const ingredientAmount = ingredients[`ingredient_amount_${i}`];
@@ -300,7 +300,7 @@ function renderIngredientList(ingredients) {
       <span class="amountIngredient">${amountDisplay}</span>
       ${ingredientName}
     `;
-    // append innerhtml to ingredient list
+      // append innerhtml to ingredient list
       ingredientList.appendChild(listItem);
       // increase ingredient count
       ingredientCount++;

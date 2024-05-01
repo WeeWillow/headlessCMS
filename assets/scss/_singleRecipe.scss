@@ -27,6 +27,10 @@
       margin: 0;
       width: 50%;
 
+      h2{
+        width: 80%;
+      }
+
       .recipeAuthor {
         margin: 2rem 0;
         display: flex;
@@ -43,7 +47,7 @@
 
       .recipeQuickStats {
         display: flex;
-        gap: .5rem;
+        gap: 1rem;
         margin-right: 3rem;
 
         .quickStats {
