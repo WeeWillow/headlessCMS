@@ -2,14 +2,18 @@
 
 #homepage {
 
-  .center {
-    text-align: center;
-    margin: 0 auto;
+  h2 {
+    font-weight: 300;
+    font-size: clamp(1.5rem,
+        5vw,
+        3rem);
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
 
-    p {
-      font-size: 1rem;
-      margin-bottom: 3rem;
-    }
+  .center p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
   }
 
   .category-cards {
@@ -18,52 +22,13 @@
     text-align: center;
     justify-content: center;
 
-    article {
-      position: relative;
-
-      button {
-        text-align: center;
-        position: absolute;
-        transform: translateX(-50%);
-        bottom: -10px;
-        font-family: "Playfair Display", serif;
-        border: none;
-        color: var(--interactive-elements-color);
-        background-color: var(--text-color);
-        border-radius: 10px;
-        height: 2rem;
-        padding-inline: 1rem;
-        border: 1px solid var(--interactive-elements-color);
-        white-space: nowrap;
-
-        &:hover {
-          color: var(--text-color);
-          background-color: var(--interactive-elements-color);
-        }
-      }
-    }
-
   }
 
-  .circular-category-cards {
-    margin-top: 4rem;
-    text-align: center;
-    display: flex;
-    gap: 2.3rem;
-    justify-content: center;
-
-    h3 {
-      font-weight: 300;
-      font-size: .8rem;
-      margin-top: 0.3rem;
-    }
-
-    img {
-      border-radius: 50%;
-      height: 120px;
-      width: 120px;
-    }
+  .category-cards article {
+    position: relative;
   }
+
+
 
   .homepage-img-container img {
     height: 300px;
@@ -71,30 +36,66 @@
     border-radius: 10px;
   }
 
-  .all-recipes-btn {
-    font-family: "Playfair Display", serif;
-    border: none;
-    color: var(--text-color);
-    background-color: var(--interactive-elements-color);
-    border-radius: 10px;
-    height: 2rem;
-    padding-inline: 1rem;
-    text-decoration: none;
-    margin-top: 1rem;
 
-    &:hover {
+
+  .category-cards {
+
+    article button {
+      cursor: pointer;
+      text-align: center;
+      position: absolute;
+      transform: translateX(-50%);
+      bottom: -10px;
+      font-family: "Playfair Display", serif;
+      border: none;
       color: var(--interactive-elements-color);
       background-color: var(--text-color);
+      border-radius: 10px;
+      height: 2rem;
+      padding-inline: 1rem;
       border: 1px solid var(--interactive-elements-color);
+      white-space: nowrap;
+
+      &:hover {
+        color: var(--text-color);
+        background-color: var(--interactive-elements-color);
+      }
     }
   }
 
+
+
+  .circular-category-cards {
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    gap: 2.3rem;
+    justify-content: center;
+  }
+
+  .circular-category-cards h3 {
+    font-weight: 300;
+    font-size: .8rem;
+    margin-top: 0.3rem;
+  }
+
+  .circular-category-cards img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+  }
+
+
+
   .center-div {
+
     text-align: center;
   }
 
+
   .recipe-cards {
     margin-top: 2rem;
+    // text-align: center;
     display: flex;
     gap: 2.3rem;
     justify-content: center;
@@ -113,6 +114,8 @@
       position: absolute;
       bottom: -5px;
       transform: translateX(-55%);
+      z-index: 2;
+
     }
 
     h3 {
@@ -133,12 +136,14 @@
   }
 
   .recent-food-stories {
+    position: relative;
     svg {
       position: absolute;
       bottom: 30px;
-      transform: translateX(-120%);
+      transform: translateX(-130%);
     }
   }
+
 }
 
 // Homepage styling slut
