@@ -11,6 +11,7 @@ const recipeTimeRadio = document.querySelectorAll('input[name="time"]');
 const recipeMealTypeRadio = document.querySelectorAll('input[name="mealtype"]');
 const recipeDietTypeCheckBox = document.querySelectorAll('input[name="diettype"]');
 const recipeDifficultyRadio = document.querySelectorAll('input[name="difficulty"]');
+const singleFilterElements = document.querySelectorAll(".single-filter"); 
 
 const allRadioButtons = document.querySelectorAll('input[type="radio"]');
 
@@ -343,3 +344,14 @@ function renderSingleRecipe(recipe) {
 //   // moderate id 76
 //   // long id 77?
 // }
+
+
+// filter toggle funktion 
+// 1) Laver et for each loop som sætter en eventlistener som lytter efter et click event på alle .single-filter div'er som jeg har gemt som variablen 
+
+singleFilterElements.forEach(filterElement => {
+  filterElement.addEventListener("click", function(event) {
+    // 2) bruger this-keywordet til at referere til the elemetn der bliver klikket på og herefterr classlist.toggle til hhv at tilføje og fjerne vores .open class til filtereret for at åbne og lukke det
+    this.classList.toggle("open");
+  });
+});

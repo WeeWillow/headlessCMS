@@ -212,6 +212,8 @@ h2 {
 }
 }
 
+
+
 .single-filter {
   border: 3px solid #fbf9f9;
   padding: 1rem;
@@ -219,7 +221,26 @@ h2 {
   background-color: #233822;
   color: #fbf9f9;
   font-family: "Merriweather", serif;
+  line-height: 150%;  
+  margin: 0;
+  height: 3.9rem;
+  overflow: hidden;
+}
+
+.open {
+  border: 3px solid #fbf9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #233822;
+  color: #fbf9f9;
+  font-family: "Merriweather", serif;
   line-height: 150%;
+  margin: 0;
+  height: auto;
+
+  .material-symbols-outlined {
+    transform: rotateZ(180deg);
+  }
 }
 
 .single-filter > div:nth-child(2) {
