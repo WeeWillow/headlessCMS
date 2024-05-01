@@ -30,15 +30,27 @@
       </nav>
     </header>
 
-    <main>
-      <section class="filters">
-        <div class="recipeFilters flex">
-          <div class="open time">
-            <div class="align flex">
+    <main class="recipes-main">
+      <div class="breadcrumbs">
+        <a href="./index.html">Home ></a><a href="./recipes.html"> Recipes</a>
+      </div>
+
+      <div class="intro">
+        <h2>Kitchen Haven Recipes</h2>
+        <p>
+          Browse our different recipes based on your specific needs. Sort by
+          meal type, diets, time and difficulty.
+        </p>
+      </div>
+
+      <section>
+        <div class="all-filters-container">
+          <div class="single-filter">
+            <div class="align-h2-with-ddarrow">
               <h2>BY TIME</h2>
               <span class="material-symbols-outlined"> expand_more </span>
             </div>
-            <div class="filterContainer toggle">
+            <div>
               <div>
                 <input type="radio" name="time" id="quick" value="75" />
                 <label for="quick">Quick</label>
@@ -53,12 +65,12 @@
               </div>
             </div>
           </div>
-          <div class="open mealtype">
-            <div class="align flex">
+          <div class="single-filter">
+            <div class="align-h2-with-ddarrow">
               <h2>BY MEAL TYPE</h2>
               <span class="material-symbols-outlined"> expand_more </span>
             </div>
-            <div class="filterContainer toggle">
+            <div>
               <div>
                 <input type="radio" name="mealtype" id="appetizer" value="31" />
                 <label for="appetizer">Appetizer</label>
@@ -97,12 +109,12 @@
               </div>
             </div>
           </div>
-          <div class="open diettype">
-            <div class="align flex">
+          <div class="single-filter">
+            <div class="align-h2-with-ddarrow">
               <h2>BY DIETTYPE</h2>
               <span class="material-symbols-outlined"> expand_more </span>
             </div>
-            <div class="filterContainer toggle">
+            <div>
               <div>
                 <input type="radio" name="diettype" id="healthy" value="116" />
                 <label for="healthy">Healthy</label>
@@ -139,12 +151,12 @@
               </div>
             </div>
           </div>
-          <div class="open difficulty">
-            <div class="align flex">
+          <div class="single-filter">
+            <div class="align-h2-with-ddarrow">
               <h2>BY DIFFICULTY</h2>
               <span class="material-symbols-outlined"> expand_more </span>
             </div>
-            <div class="filterContainer toggle">
+            <div>
               <div>
                 <input type="radio" name="difficulty" id="easy" value="69" />
                 <label for="easy">Easy</label>
