@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>All Articles - Kitchen Haven</title>
-    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" >
     <script src="./assets/js/app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    >
 </head>
 <body id="articles">
+  <header>
+    <a href="./index.html"><h1>Kitchen Haven</h1></a>
+    <nav aria-label="navigation">
+      <a href="./recipes.html">Recipes</a>
+      <a href="./articles.html">Articles</a>
+      <a href="#">Meal Plan</a>
+      <a href="#">Food Coach</a>
+      <a href="#">Cookbooks</a>
+      <a href="#">Log In</a>
+      <span class="material-symbols-outlined"> search </span>
+    </nav>
+  </header>
   <main>
-    <header>
-      <a href="./index.html"><h1>Kitchen Haven</h1></a>
-      <nav aria-label="navigation">
-        <a href="./recipes.html">Recipes</a>
-        <a href="./articles.html">Articles</a>
-        <a href="#">Meal Plan</a>
-        <a href="#">Food Coach</a>
-        <a href="#">Cookbooks</a>
-        <a href="#">Log In</a>
-        <span class="material-symbols-outlined"> search </span>
-      </nav>
-    </header>
     <nav aria-label="Breadcrumbs" class="breadcrumbs">
       <ol>
         <li>
@@ -32,13 +43,12 @@
         </li>
       </ol>
     </nav>
-  </main>
     <a href="#" class="containerTopArticle">
       <div class="mainImage">
         <img
-          src="./assets/img/Cuban Summer Peach and Corn Salad.jpg"
+          src="./assets/img/opskriftsbilleder/Cuban Summer Peach and Corn Salad.webp"
           alt="Cuban Summer Peach and Corn Salad"
-        />
+        >
         <div class="overlayTopArticle">
           <p>Cooking story</p>
           <h1>Diabetic Dinner Party: 4 dishes to please every palate</h1>
@@ -55,9 +65,9 @@
         <h2>Featured articles</h2>
         <a href="#" class="box">
           <img
-            src="./assets/img/Foil Packet Salmon with Cherry Tomatoes, Basil and Capers (1).jpg"
+            src="./assets/img/opskriftsbilleder/Foil Packet Salmon with Cherry Tomatoes, Basil and Capers (1).webp"
             alt="Foil Packet Salmon with Cherry Tomatoes, Basil and Capers"
-          />
+          >
           <div class="textContent">
             <p>Cooking story</p>
             <h2>
@@ -67,9 +77,9 @@
         </a>
         <a href="#" class="box">
           <img
-            src="./assets/img/Pear and Blue Cheese Salad Recipe.jpg"
+            src="./assets/img/opskriftsbilleder/Pear and Blue Cheese Salad Recipe.webp"
             alt="Pear and Blue Cheese Salad Recipe"
-          />
+          >
           <div class="textContent">
             <p>Cooking story</p>
             <h2>Can you really make Delicious Deals in 30 Minutes?</h2>
@@ -78,9 +88,9 @@
       </div>
       <a href="#" class="rightArticleBox">
         <img
-          src="./assets/img/Penne Pasta,Peas and Bacon.jpg"
+          src="./assets/img/opskriftsbilleder/Penne Pasta,Peas and Bacon.webp"
           alt="Penne Pasta, Peas and Bacon"
-        />
+        >
         <div class="overlayRightBox">
           <p>Cooking story</p>
           <h1>Cooking with Kids: Fun and Healthy Recipes to Make Together</h1>
@@ -94,9 +104,9 @@
     <a href="#" class="containerMiddelArticle">
       <div class="mainImage">
         <img
-          src="./assets/img/Pork Chops with Mushrooms Ragout.jpg"
+          src="./assets/img/opskriftsbilleder/Pork Chops with Mushrooms Ragout.webp"
           alt="Pork Chops with Mushrooms Ragout"
-        />
+        >
         <div class="overlayMiddelArticle">
           <p>Cooking story</p>
           <h1>Diabetic Dinner Party: 4 dishes to please every palate</h1>
@@ -111,24 +121,24 @@
     <a href="#" class="containerBottomArticle">
       <div class="mainImage">
         <img
-          src="./assets/img/Easter Bread with Colored Eggs.jpg"
+          src="./assets/img/opskriftsbilleder/Easter Bread with Colored Eggs.webp"
           alt="Easter Bread with Colored Eggs"
-        />
-        <div class="overlayBottomArticle">
+        >
+        <article class="overlayBottomArticle">
           <p>Cooking story</p>
           <h1>The best healthy options for dessert</h1>
           <p>
             Take a look on our top picks for healthy and delicious desserts.
           </p>
-        </div>
+        </article>
       </div>
     </a>
     <div class="imageRow">
       <a href="#" class="containerSmallArticle">
         <img
-          src="./assets/img/Gnocchi Alla Romana.jpg"
+          src="./assets/img/opskriftsbilleder/Gnocchi Alla Romana.webp"
           alt="Gnocchi Alla Romana"
-        />
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -145,11 +155,11 @@
               height="123.352"
               filterUnits="userSpaceOnUse"
             >
-              <feOffset dx="5" dy="8" input="SourceAlpha" />
-              <feGaussianBlur stdDeviation="7" result="blur" />
-              <feFlood flood-opacity="0.62" />
-              <feComposite operator="in" in2="blur" />
-              <feComposite in="SourceGraphic" />
+              <feOffset dx="5" dy="8" input="SourceAlpha" >
+              <feGaussianBlur stdDeviation="7" result="blur" >
+              <feFlood flood-opacity="0.62" >
+              <feComposite operator="in" in2="blur" >
+              <feComposite in="SourceGraphic" >
             </filter>
           </defs>
           <g
@@ -162,16 +172,16 @@
               d="M138.078-776.726h31.637v-9.039H138.078Zm0-18.078h45.2v-9.039h-45.2Zm0-18.078h45.2v-9.039h-45.2Zm-9.039,54.235a8.7,8.7,0,0,1-6.384-2.655A8.7,8.7,0,0,1,120-767.687v-63.274a8.7,8.7,0,0,1,2.655-6.384A8.7,8.7,0,0,1,129.039-840h63.274a8.7,8.7,0,0,1,6.384,2.655,8.7,8.7,0,0,1,2.655,6.384v63.274A8.7,8.7,0,0,1,198.7-761.3a8.7,8.7,0,0,1-6.384,2.655Zm0-9.039h63.274v-63.274H129.039Zm0-63.274v0Z"
               transform="translate(-104 853)"
               fill="#fbf9f9"
-            />
+            >
           </g>
         </svg>
         <h2>Best Recipes for a Diabetes-friendly dinner party</h2>
       </a>
       <a href="#" class="containerSmallArticle">
         <img
-          src="./assets/img/Quiche Lorraine - Giangi's Style.jpg"
+          src="./assets/img/opskriftsbilleder/Quiche Lorraine - Giangi's Style.webp"
           alt="Quiche Lorraine - Giangi's Style"
-        />
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -188,11 +198,11 @@
               height="123.352"
               filterUnits="userSpaceOnUse"
             >
-              <feOffset dx="5" dy="8" input="SourceAlpha" />
-              <feGaussianBlur stdDeviation="7" result="blur" />
-              <feFlood flood-opacity="0.62" />
-              <feComposite operator="in" in2="blur" />
-              <feComposite in="SourceGraphic" />
+              <feOffset dx="5" dy="8" input="SourceAlpha" >
+              <feGaussianBlur stdDeviation="7" result="blur" >
+              <feFlood flood-opacity="0.62" >
+              <feComposite operator="in" in2="blur" >
+              <feComposite in="SourceGraphic" >
             </filter>
           </defs>
           <g
@@ -205,7 +215,7 @@
               d="M138.078-776.726h31.637v-9.039H138.078Zm0-18.078h45.2v-9.039h-45.2Zm0-18.078h45.2v-9.039h-45.2Zm-9.039,54.235a8.7,8.7,0,0,1-6.384-2.655A8.7,8.7,0,0,1,120-767.687v-63.274a8.7,8.7,0,0,1,2.655-6.384A8.7,8.7,0,0,1,129.039-840h63.274a8.7,8.7,0,0,1,6.384,2.655,8.7,8.7,0,0,1,2.655,6.384v63.274A8.7,8.7,0,0,1,198.7-761.3a8.7,8.7,0,0,1-6.384,2.655Zm0-9.039h63.274v-63.274H129.039Zm0-63.274v0Z"
               transform="translate(-104 853)"
               fill="#fbf9f9"
-            />
+            >
           </g>
         </svg>
 
@@ -213,9 +223,9 @@
       </a>
       <a href="#" class="containerSmallArticle">
         <img
-          src="./assets/img/Sun-Dried Tomato Tapenade.jpg"
+          src="./assets/img/opskriftsbilleder/Sun-Dried Tomato Tapenade.webp"
           alt="Sun-Dried Tomato Tapenade"
-        />
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -232,11 +242,11 @@
               height="123.352"
               filterUnits="userSpaceOnUse"
             >
-              <feOffset dx="5" dy="8" input="SourceAlpha" />
-              <feGaussianBlur stdDeviation="7" result="blur" />
-              <feFlood flood-opacity="0.62" />
-              <feComposite operator="in" in2="blur" />
-              <feComposite in="SourceGraphic" />
+              <feOffset dx="5" dy="8" input="SourceAlpha" >
+              <feGaussianBlur stdDeviation="7" result="blur" >
+              <feFlood flood-opacity="0.62" >
+              <feComposite operator="in" in2="blur" >
+              <feComposite in="SourceGraphic" >
             </filter>
           </defs>
           <g
@@ -249,7 +259,7 @@
               d="M138.078-776.726h31.637v-9.039H138.078Zm0-18.078h45.2v-9.039h-45.2Zm0-18.078h45.2v-9.039h-45.2Zm-9.039,54.235a8.7,8.7,0,0,1-6.384-2.655A8.7,8.7,0,0,1,120-767.687v-63.274a8.7,8.7,0,0,1,2.655-6.384A8.7,8.7,0,0,1,129.039-840h63.274a8.7,8.7,0,0,1,6.384,2.655,8.7,8.7,0,0,1,2.655,6.384v63.274A8.7,8.7,0,0,1,198.7-761.3a8.7,8.7,0,0,1-6.384,2.655Zm0-9.039h63.274v-63.274H129.039Zm0-63.274v0Z"
               transform="translate(-104 853)"
               fill="#fbf9f9"
-            />
+            >
           </g>
         </svg>
         <h2>
@@ -258,9 +268,9 @@
       </a>
       <a href="#" class="containerSmallArticle">
         <img
-          src="./assets/img/Bacon Chicken Thighs.jpg"
+          src="./assets/img/opskriftsbilleder/Bacon Chicken Thighs.webp"
           alt="Bacon Chicken Thighs"
-        />
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -277,11 +287,11 @@
               height="123.352"
               filterUnits="userSpaceOnUse"
             >
-              <feOffset dx="5" dy="8" input="SourceAlpha" />
-              <feGaussianBlur stdDeviation="7" result="blur" />
-              <feFlood flood-opacity="0.62" />
-              <feComposite operator="in" in2="blur" />
-              <feComposite in="SourceGraphic" />
+              <feOffset dx="5" dy="8" input="SourceAlpha" >
+              <feGaussianBlur stdDeviation="7" result="blur" >
+              <feFlood flood-opacity="0.62" >
+              <feComposite operator="in" in2="blur" >
+              <feComposite in="SourceGraphic" >
             </filter>
           </defs>
           <g
@@ -294,16 +304,16 @@
               d="M138.078-776.726h31.637v-9.039H138.078Zm0-18.078h45.2v-9.039h-45.2Zm0-18.078h45.2v-9.039h-45.2Zm-9.039,54.235a8.7,8.7,0,0,1-6.384-2.655A8.7,8.7,0,0,1,120-767.687v-63.274a8.7,8.7,0,0,1,2.655-6.384A8.7,8.7,0,0,1,129.039-840h63.274a8.7,8.7,0,0,1,6.384,2.655,8.7,8.7,0,0,1,2.655,6.384v63.274A8.7,8.7,0,0,1,198.7-761.3a8.7,8.7,0,0,1-6.384,2.655Zm0-9.039h63.274v-63.274H129.039Zm0-63.274v0Z"
               transform="translate(-104 853)"
               fill="#fbf9f9"
-            />
+            >
           </g>
         </svg>
         <h2>Fast and flavorful: four weeknight meals you family will love</h2>
       </a>
       <a href="#" class="containerSmallArticle">
         <img
-          src="./assets/img/Vegan Noodles with Tomato, Spinach and Walnuts.jpg"
+          src="./assets/img/opskriftsbilleder/Vegan Noodles with Tomato, Spinach and Walnuts.webp"
           alt="Vegan Noodles with Tomato, Spinach and Walnuts"
-        />
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -320,11 +330,11 @@
               height="123.352"
               filterUnits="userSpaceOnUse"
             >
-              <feOffset dx="5" dy="8" input="SourceAlpha" />
-              <feGaussianBlur stdDeviation="7" result="blur" />
-              <feFlood flood-opacity="0.62" />
-              <feComposite operator="in" in2="blur" />
-              <feComposite in="SourceGraphic" />
+              <feOffset dx="5" dy="8" input="SourceAlpha" >
+              <feGaussianBlur stdDeviation="7" result="blur" >
+              <feFlood flood-opacity="0.62" >
+              <feComposite operator="in" in2="blur" >
+              <feComposite in="SourceGraphic" >
             </filter>
           </defs>
           <g
@@ -337,12 +347,13 @@
               d="M138.078-776.726h31.637v-9.039H138.078Zm0-18.078h45.2v-9.039h-45.2Zm0-18.078h45.2v-9.039h-45.2Zm-9.039,54.235a8.7,8.7,0,0,1-6.384-2.655A8.7,8.7,0,0,1,120-767.687v-63.274a8.7,8.7,0,0,1,2.655-6.384A8.7,8.7,0,0,1,129.039-840h63.274a8.7,8.7,0,0,1,6.384,2.655,8.7,8.7,0,0,1,2.655,6.384v63.274A8.7,8.7,0,0,1,198.7-761.3a8.7,8.7,0,0,1-6.384,2.655Zm0-9.039h63.274v-63.274H129.039Zm0-63.274v0Z"
               transform="translate(-104 853)"
               fill="#fbf9f9"
-            />
+            >
           </g>
         </svg>
         <h2>Pasta inspiration: 3 clever ways to use your pasta</h2>
       </a>
     </div>
+  </main>
     <footer>
       <div class="footer-content">
         <div>

@@ -43,8 +43,8 @@ body {
 }
 
 // import
-// @import "singleRecipe", "articleOverview", "singleArticle", "recipeOverview", ;
-@import "recipeOverview", "singleRecipe", "homeIndex";
+// 
+@import "recipeOverview", "articleOverview", "singleRecipe", "singleArticle", "homeIndex";
 
 main {
   width: 75vw;

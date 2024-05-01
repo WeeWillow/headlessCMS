@@ -146,7 +146,7 @@ function renderRecipeCard(recipe) {
           cy="14.5"
           r="14.5"
           fill="#233822"
-        />
+        /></circle>
         <path
           id="Icon_akar-heart"
           data-name="Icon akar-heart"
