@@ -2,7 +2,6 @@ const urlBase = 'https://api.weewillow.com/wp-json/wp/v2/';
 const recipeCategoryId = 3;
 const sectionEl = document.querySelector('.renderedRecipes');
 const recipeHTMLel = document.querySelector('#recipeHTML');
-
 const recipeTimeId = 149;
 const recipeMealTypeId = 144;
 const recipeDietPrefId = 147;
@@ -11,7 +10,7 @@ const recipeTimeRadio = document.querySelectorAll('input[name="time"]');
 const recipeMealTypeRadio = document.querySelectorAll('input[name="mealtype"]');
 const recipeDietTypeCheckBox = document.querySelectorAll('input[name="diettype"]');
 const recipeDifficultyRadio = document.querySelectorAll('input[name="difficulty"]');
-const singleFilterElements = document.querySelectorAll(".single-filter"); 
+const singleFilterElements = document.querySelectorAll(".single-filter");
 
 const allRadioButtons = document.querySelectorAll('input[type="radio"]');
 
@@ -197,25 +196,28 @@ function getSingleRecipe() {
   // render med funktion
 }
 
+
+
 function renderSingleRecipe(recipe) {
   recipeHTMLel.innerHTML =
     `
-      <nav aria-label="Breadcrumbs" class="breadcrumbs">
-        <ol>
-          <li>
-            <a href="./index.html">Home</a>
-            <p aria-hidden="true">&gt;</p>
-          </li>
-          <li>
-            <a href="./recipes.html">Recipes</a>
-            <p aria-hidden="true">&gt;</p>
-          </li>
-          <li>
-            <a href="#" aria-current="page" id="currentPage">${recipe.acf.alt_title}</a>
-          </li>
-        </ol>
-      </nav>
-      <section class="recipeOverview">
+    <nav aria-label="Breadcrumbs" class="breadcrumbs">
+    <ol>
+      <li>
+        <a href="./index.html">Home</a>
+        <p aria-hidden="true">&gt;</p>
+      </li>
+      <li>
+        <a href="./recipes.html">Recipes</a>
+        <p aria-hidden="true">&gt;</p>
+      </li>
+      <li>
+        <a href="#" aria-current="page" id="currentPage">Red-Braised Pork Belly</a>
+      </li>
+    </ol>
+  </nav>
+
+  <section class="recipeOverview">
         <div class="recipeInfo">
           <h2>${recipe.acf.alt_title}</h2>
           <div class="recipeQuickStats">
@@ -316,7 +318,7 @@ function renderMethodList(method) {
 // 1) Laver et for each loop som sætter en eventlistener som lytter efter et click event på alle .single-filter div'er som jeg har gemt som variablen 
 
 singleFilterElements.forEach(filterElement => {
-  filterElement.addEventListener("click", function(event) {
+  filterElement.addEventListener("click", function (event) {
     // 2) bruger this-keywordet til at referere til the elemetn der bliver klikket på og herefterr classlist.toggle til hhv at tilføje og fjerne vores .open class til filtereret for at åbne og lukke det
     this.classList.toggle("open");
   });

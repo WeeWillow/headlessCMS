@@ -3,12 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artikelside</title>
+    <title>All Articles - Kitchen Haven</title>
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <script src="./assets/js/app.js" defer></script>
 </head>
 <body id="articles">
-    <div class="breadcrumb">Hjem > Artikler</div>
+  <main>
+    <header>
+      <a href="./index.html"><h1>Kitchen Haven</h1></a>
+      <nav aria-label="navigation">
+        <a href="./recipes.html">Recipes</a>
+        <a href="./articles.html">Articles</a>
+        <a href="#">Meal Plan</a>
+        <a href="#">Food Coach</a>
+        <a href="#">Cookbooks</a>
+        <a href="#">Log In</a>
+        <span class="material-symbols-outlined"> search </span>
+      </nav>
+    </header>
+    <nav aria-label="Breadcrumbs" class="breadcrumbs">
+      <ol>
+        <li>
+          <a href="./index.html">Home</a>
+          <p aria-hidden="true">&gt;</p>
+        </li>
+        <li>
+          <a href="#" aria-current="page" id="currentPage">Articles</a>
+        </li>
+      </ol>
+    </nav>
+  </main>
     <a href="#" class="containerTopArticle">
       <div class="mainImage">
         <img

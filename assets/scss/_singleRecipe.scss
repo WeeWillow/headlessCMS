@@ -2,8 +2,6 @@
 
 #singleRecipe {
   // body section
-  background: var(--background-color);
-
   h2 {
     font-family: 'Playfair Display';
     font-size: 40px;
@@ -11,68 +9,6 @@
     color: var(--text-color);
   }
 
-  // header section
-  header {
-    background-color: var(--nav-color);
-
-    a,
-    span {
-      color: var(--text-color);
-      transition: color 0.2s;
-
-      &:hover {
-        color: var(--interactive-elements-color);
-      }
-    }
-
-  }
-
-  // main section
-  main {
-    width: 70vw;
-    margin: auto;
-  }
-
-  // breadcrumb section
-  .breadcrumbs {
-    margin: 2rem 0;
-
-    #currentPage {
-      font-weight: bold;
-    }
-
-    ol {
-      font-family: "Merriweather";
-      font-size: 12px;
-      padding: 0;
-      display: flex;
-      list-style: none;
-      color: var(--text-color);
-      gap: .5rem;
-
-      li {
-        display: flex;
-        gap: .5rem;
-        align-items: center;
-      }
-
-      a {
-        margin: 0;
-        text-decoration: none;
-        color: var(--text-color);
-        transition: color 0.2s;
-
-        &:hover {
-          color: var(--interactive-elements-color);
-        }
-      }
-
-      p {
-        margin: 0;
-        display: inline;
-      }
-    }
-  }
 
   // recipe overview section
   section.recipeOverview {

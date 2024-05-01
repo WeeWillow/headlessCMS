@@ -1,33 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", "Merriweather", serif;
-  color: var(--text-color);
-}
-
-p {
-  font-family: "Merriweather", serif;
-  color: var(--text-color);
-}
-
-
-:root {
-  --background-color: #cf8b55;
-  --nav-color: #c27838;
-  --text-color: #fbf9f9;
-  --interactive-elements-color: #233822;
-}
-
-body {
-  margin-left: 20vw;
-  background-color: var(--background-color);
-}
+// body {
+//   margin-left: 20vw;
+//   background-color: var(--background-color);
+// }
 /*Overskrift med billede til artikel*/
+
+#singleArticle {
+  main {
+    width: 70vw;
+    margin: auto;
+  }
+}
 .header {
   display: flex;
 }

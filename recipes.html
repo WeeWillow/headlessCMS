@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>All Recipes - Kitchen Haven</title>
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <script src="./assets/js/app.js" defer></script>
     <script src="./assets/js/recipeOverview.js" defer></script>
@@ -29,11 +29,18 @@
         </div>
       </nav>
     </header>
-
     <main class="recipes-main">
-      <div class="breadcrumbs">
-        <a href="./index.html">Home ></a><a href="./recipes.html"> Recipes</a>
-      </div>
+      <nav aria-label="Breadcrumbs" class="breadcrumbs">
+        <ol>
+          <li>
+            <a href="./index.html">Home</a>
+            <p aria-hidden="true">&gt;</p>
+          </li>
+          <li>
+            <a href="#" aria-current="page" id="currentPage">Recipes</a>
+          </li>
+        </ol>
+      </nav>
 
       <div class="intro">
         <h2>Kitchen Haven Recipes</h2>

@@ -1,0 +1,117 @@
+// recipes.html styling start
+
+
+#recipes-page {
+
+  .recipes-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    padding-top: 2rem;
+    padding-left: 2.2rem;
+
+  }
+
+  .renderedRecipes {
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Merriweather", serif;
+    font-size: .8rem;
+  }
+
+  p {
+    max-width: 440px;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: clamp(1rem, 2.5rem, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+
+    h2,
+    p {
+      color: var(--text-color);
+    }
+  }
+
+  // filters styling start
+  section {
+    margin: 1rem 0;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .all-filters-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  .align-h2-with-ddarrow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .single-filter {
+    border: 3px solid #fbf9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #233822;
+    color: #fbf9f9;
+    font-family: "Merriweather", serif;
+    line-height: 150%;
+    margin: 0;
+    height: 4rem;
+    overflow: hidden;
+
+    input {
+      cursor: pointer;
+    }
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+  .open {
+    border: 3px solid #fbf9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #233822;
+    color: #fbf9f9;
+    font-family: "Merriweather", serif;
+    line-height: 150%;
+    margin: 0;
+    height: auto;
+
+    .material-symbols-outlined {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  .single-filter>div:nth-child(2) {
+    padding-top: 1rem;
+  }
+}
+
+// filters styling end
+// recipes.html styling end
