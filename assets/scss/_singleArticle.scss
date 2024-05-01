@@ -1,7 +1,6 @@
 /*Overskrift med billede til artikel*/
 
 #singleArticle {
-
   /*Overskrift med billede til artikel*/
   .header {
     display: flex;
@@ -22,10 +21,6 @@
   }
 
   /*Content til artiklen med billeder*/
-  .contentWrapper {
-    margin-right: 250px;
-  }
-
   .mainContent {
     width: 70%;
 
@@ -39,16 +34,22 @@
     section {
       margin-bottom: 75px;
     }
+
+    h3 {
+      margin: 0.2rem;
+      
+    }
   }
 
   /*Skip to section*/
   .navigationContent {
     display: flex;
+    justify-content: space-between;
   }
 
   .skipTo {
-    width: 30%;
-    margin-right: 200px;
+    width: 20%;
+    margin-right: 3rem;
 
     a {
       text-decoration: none;
@@ -63,6 +64,10 @@
         display: block;
         margin-bottom: 20px;
       }
+    }
+
+    h3 {
+      font-size: 1.2rem;
     }
   }
 

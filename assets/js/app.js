@@ -118,6 +118,7 @@ function getPrivateRecipes(recipeTimeId, recipeMealTypeId, recipeDietPrefId, rec
     .catch(err => console.log('get private recipes error occured: ', err))
 };
 
+
 function clearResults() {
   sectionEl.innerHTML = "";
 }
@@ -166,12 +167,11 @@ function renderRecipeCard(recipe) {
     </div>
     `
 }
+
+
 // catch url id
 // fetch
 // render
-
-
-
 function getSingleRecipe() {
   // fang id fra url
   const urlParams = new URLSearchParams(window.location.search);
@@ -197,7 +197,7 @@ function getSingleRecipe() {
 }
 
 
-
+// render innerhtml dynamically from api data
 function renderSingleRecipe(recipe) {
   recipeHTMLel.innerHTML =
     `
@@ -258,13 +258,18 @@ function renderSingleRecipe(recipe) {
   `
 }
 
+// function to get time for individual recipes
 function getTime(timeString) {
+  // if quick it returns a string with "<30"
   if (timeString.includes("Quick")) {
     return "<30";
+    // else if moderate it returns a string with "30-60"
   } else if (timeString.includes("Moderate")) {
     return "30-60";
+    // else if long it returns a string with "60+"
   } else if (timeString.includes("Long")) {
     return "60+";
+    // else if nothing matches, then it returns "N/A" (this should not happen as every recipe in WP has a time on it.)
   } else {
     return "N/A";
   }
@@ -272,26 +277,36 @@ function getTime(timeString) {
 
 // to render ingredient list, filter empty strings out with for loop, if(value) {ing += ''} sort empty away
 function renderIngredientList(ingredients) {
+  // catch class from html
   const ingredientList = document.querySelector('.ingredientList');
+  // set it to be empty
   ingredientList.innerHTML = '';
-
+  // define temp variable
   let ingredientCount = 0;
-
+  // for loop to go through every ingredient from api (1-10 since there's max 10 ingredients)
   for (let i = 1; i <= 10; i++) {
+    // get name from i
     const ingredientName = ingredients[`ingredient_${i}`];
-
+// remove empty space, if not empty then continue
     if (ingredientName.trim() !== '') {
+      // save amount of ingredient in variable
       const ingredientAmount = ingredients[`ingredient_amount_${i}`];
+      // if not empty, assign amount, if empty assign "-"
       const amountDisplay = ingredientAmount.trim() !== '' ? ingredientAmount : '-';
+      // create li
       const listItem = document.createElement('li');
+      // set innerhtml with amount and ingredient
       listItem.innerHTML = `
       <span class="amountIngredient">${amountDisplay}</span>
       ${ingredientName}
     `;
+    // append innerhtml to ingredient list
       ingredientList.appendChild(listItem);
+      // increase ingredient count
       ingredientCount++;
     }
   }
+  // select html element top of recipe, set content to the nr of ingredients from for loop
   document.getElementById('nrIngredients').textContent = ingredientCount;
 };
 

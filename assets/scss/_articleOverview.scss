@@ -86,8 +86,8 @@
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--text-color);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 0px 10px 10px 0px;
   }
 
   //To features og en større artikel
@@ -104,11 +104,7 @@
     height: 600px;
 
     h2 {
-      color: var(--text-color);
-    }
-
-    p {
-      color: var(--text-color);
+      margin-top: 0;
     }
   }
 
@@ -130,13 +126,13 @@
     width: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--text-color);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 10px 0;
   }
 
   .box {
-    margin-bottom: 75px;
     display: flex;
+    margin: 2rem 0;
 
     img {
       width: 250px;
@@ -149,6 +145,10 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 
   //To store artikler
@@ -159,26 +159,26 @@
 
   .overlayMiddelArticle {
     position: absolute;
-    bottom: 0;
+    bottom: 4.5px;
     right: 0;
     width: 35%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--text-color);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 10px 0;
   }
 
   .overlayBottomArticle {
     position: absolute;
-    bottom: 0;
+    bottom: 4.5px;
     left: 0;
     width: 35%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--text-color);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 0 10px;
   }
 
   //Række af artikler i bunden
@@ -198,7 +198,7 @@
 
   .containerSmallArticle {
     display: flex;
-    height: 600px;
+    height: auto;
     flex: 1;
     flex-direction: column;
     align-items: center;
@@ -208,6 +208,11 @@
       position: absolute;
       width: 55%;
       height: 40%;
+    }
+
+    h2{
+      margin-top: .5rem;
+      font-size: 1.5rem;
     }
   }
 

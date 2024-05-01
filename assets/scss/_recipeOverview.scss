@@ -3,13 +3,47 @@
 
 #recipes-page {
 
+  .recipe-cards {
+    margin-top: 2rem;
+    // text-align: center;
+    display: flex;
+    gap: 2.3rem;
+    justify-content: center;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    div {
+      position: relative;
+    }
+
+    svg {
+      position: absolute;
+      bottom: -5px;
+      transform: translateX(-55%);
+      z-index: 2;
+
+    }
+
+    h3 {
+      font-weight: 400;
+      margin-top: .1rem;
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+
+    article {
+      max-width: 200px;
+    }
+  }
+
   .recipes-main {
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--background-color);
-    padding-top: 2rem;
-    padding-left: 2.2rem;
-
   }
 
   .renderedRecipes {
@@ -53,7 +87,6 @@
 
   .all-filters-container {
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
     gap: 3rem;
     margin-top: 3rem;
@@ -68,6 +101,7 @@
     h2 {
       margin: 0;
       padding: 0;
+      font-size: 1.8rem;
     }
   }
 
